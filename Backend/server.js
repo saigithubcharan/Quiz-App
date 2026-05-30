@@ -3,6 +3,7 @@ const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
 const pool = require("./db");
+require("dotenv").config();
 
 const app = express();
 
@@ -344,7 +345,7 @@ io.on("connection", (socket) => {
     );
   });
 });
-
+console.log("DB URL:", process.env.DATABASE_URL);
 server.listen(5000, () => {
   console.log(
     "Server running on port 5000"
