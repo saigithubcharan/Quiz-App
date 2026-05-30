@@ -9,6 +9,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("Quiz Backend Running");
+});
 
 const server = http.createServer(app);
 
@@ -345,9 +348,14 @@ io.on("connection", (socket) => {
     );
   });
 });
-console.log("DB URL:", process.env.DATABASE_URL);
-server.listen(5000, () => {
-  console.log(
-    "Server running on port 5000"
-  );
+// console.log("DB URL:", process.env.DATABASE_URL);
+// server.listen(5000, () => {
+//   console.log(
+//     "Server running on port 5000"
+//   );
+// });
+const PORT = process.env.PORT || 5000;
+
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
