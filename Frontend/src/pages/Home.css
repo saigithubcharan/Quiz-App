@@ -1,0 +1,130 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-card {
+  background: white;
+  padding: 40px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.home-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2563eb;
+}
+
+.home-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.home-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.home-btn:hover {
+  background: #1d4ed8;
+}
+.result-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-card {
+  width: 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.result-title {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.correct-answer {
+  font-size: 28px;
+  font-weight: bold;
+  color: #16a34a;
+  margin: 20px 0;
+}
+
+.next-question {
+  color: #64748b;
+  font-size: 18px;
+}
+
+.leaderboard-title {
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+.leaderboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 12px;
+  background: #f8fafc;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rank-1 {
+  background: #fef3c7;
+  border: 2px solid #f59e0b;
+}
+
+.rank-2 {
+  background: #e2e8f0;
+  border: 2px solid #94a3b8;
+}
+
+.rank-3 {
+  background: #fed7aa;
+  border: 2px solid #ea580c;
+}
+
+.player-name {
+  color: #1e293b;
+}
+
+.player-score {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.trophy {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
